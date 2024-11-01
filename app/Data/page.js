@@ -29,7 +29,7 @@ export default function Data() {
   }
 
   const updateTask = async (id, taskData) => {
-    await fetch(`http://localhost:3000/api/tasks/${id}`, {
+    await fetch(`/api/tasks/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ export default function Data() {
   }
 
   const deleteTask = async (id) => {
-    await fetch(`http://localhost:3000/api/tasks/${id}`, {
+    await fetch(`/api/tasks/${id}`, {
       method: 'DELETE',
     })
     fetchTasks()
