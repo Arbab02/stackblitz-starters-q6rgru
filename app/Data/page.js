@@ -18,7 +18,7 @@ export default function Data() {
   }
 
   const createTask = async (taskData) => {
-    await fetch('http://localhost:3000/api/tasks', {
+    await fetch('/api/tasks', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
